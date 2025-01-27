@@ -1,20 +1,19 @@
-'use client'
+"use client";
 
-import { Button } from "@mui/material"
+import { Button } from "@mui/material";
 
-export default function PostButton(){
+export default function PostButton() {
+  function handleClick() {
+    fetch("https://jsonplaceholder.typicode.com/todos", { method: "GET" })
+      .then((res) => res.json((data) => console.log(data)))
+      .catch(() => {
+        console.log("An error occured");
+      });
+  }
 
-    function handleClick(){
-        fetch('http://localhost:3000/examples', {method: 'POST'}).then((data) => {
-            console.log({data})
-        }).catch(() => {
-            console.log('An error occured')
-        })
-    }
-
-    return (
-        <Button onClick={handleClick}>
-            Post Data
-        </Button>
-    )
+  return (
+    <Button test-data="post-grudges-btn" onClick={handleClick}>
+      Post Data
+    </Button>
+  );
 }

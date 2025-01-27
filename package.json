@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cypress:run": "npx cypress run --headed",
+    "cypress:headless": "npx cypress run",
+    "cypress:open": "npx cypress open"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -16,5 +19,8 @@
     "next": "13.4.12",
     "react": "18.2.0",
     "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "cypress": "^14.0.0"
   }
 }
