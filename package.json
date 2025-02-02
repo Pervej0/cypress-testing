@@ -16,6 +16,8 @@
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.14.1",
     "@mui/material": "^5.14.1",
+    "google-auth-library": "^9.15.1",
+    "googleapis": "^144.0.0",
     "next": "13.4.12",
     "react": "18.2.0",
     "react-dom": "18.2.0"
